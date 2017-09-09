@@ -10,7 +10,7 @@ print("ขนาดของ Array \(numberAInts.count)")
 
 print("numberAInts[2] ==> \(numberAInts[2+1])")
 
-print("numberAInts[4] ==> \(numberAInts[4+1])")
+print("numberAInts[4] ==> \(numberAInts[4])")
 
 // Add member
 
