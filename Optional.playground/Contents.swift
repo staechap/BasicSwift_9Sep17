@@ -14,7 +14,7 @@ var numberString = "10"
 
 var numberAInt = Int(numberString)
 
-if var numberAInt2 = numberAInt {
+if var numberAInt2 = numberAInt {  // ตัวแปรกำหนด เป็น nil ไม่ได้เป็น false
     var ansAInt = numberAInt2 + 10
 }
 
