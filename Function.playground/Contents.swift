@@ -17,7 +17,13 @@ class MyClass {
     func welcomeOfMyClass() -> Void {
         print ("This is welcome from MyClass")
     }
-
+    
+    func calTriAngle(baseAInt: Int ,hightAInt: Int) -> Double {
+        let baseDouble  = Double(baseAInt)
+        let highDouble  = Double(hightAInt)
+        let areaDouble = 0.5 * baseDouble * highDouble
+        return areaDouble
+    }
 
 }  // MyClass
 
@@ -75,3 +81,6 @@ func addPosition2(strPre: String) -> String{
 
 let myResult2 = addPosition2(strPre: "Miss. ")
 print("Result ==> \(myResult2)")
+
+let myArea = ungClass.calTriAngle(baseAInt: 10, hightAInt: 10)
+print("Area ==> \(myArea)")
