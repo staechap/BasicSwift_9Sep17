@@ -14,7 +14,9 @@ class MyClass {
     var ungAInt: Int = 100
     var ungADouble: Double = 3.1416
     var ungABool: Bool = true
-    
+    func welcomeOfMyClass() -> Void {
+        print ("This is welcome from MyClass")
+    }
 
 
 }  // MyClass
@@ -41,3 +43,35 @@ var myAInt = ungClass.ungAInt
 
 print(" ==> \(myAInt)")
 
+//Create Funtion Here
+// 1 Funtion แบบ void ไม่มีการ return ค่า
+
+
+func welcome() -> Void {
+    print ("This is funtion welcome")
+}
+
+//Call Funtion
+welcome()  // การเรียก function ของตัวเอง
+
+ungClass.welcomeOfMyClass()  // การเรียก จาก class อื่น
+
+// 2 Funtion แบบ return type
+func addPosition1() ->String{
+    let result = "Mr." + myName
+    return result
+}
+
+
+// Call Funtion (2)
+
+let myResult = addPosition1()
+print("myResult ==> \(myResult)")
+
+func addPosition2(strPre: String) -> String{
+    let result = strPre + myName
+    return result
+}
+
+let myResult2 = addPosition2(strPre: "Miss. ")
+print("Result ==> \(myResult2)")
